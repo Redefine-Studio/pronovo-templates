@@ -23,6 +23,10 @@ module.exports = {
       removeUnusedCSS: {
         removeHTMLComments: false
       },
+      baseURL: {
+        url: 'https://www.pronovo.ch/',
+        tags: ['img'],
+      },
     },
   },
 }
