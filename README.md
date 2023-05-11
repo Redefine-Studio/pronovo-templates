@@ -1,36 +1,10 @@
-<div align="center">
-  <p>
-    <a href="https://maizzle.com" target="_blank">
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github.com/maizzle/maizzle/raw/master/.github/logo-dark.svg">
-        <img alt="Maizzle Starter" src="https://github.com/maizzle/maizzle/raw/master/.github/logo-light.svg" width="300" height="225" style="max-width: 100%;">
-      </picture>
-    </a>
-  </p>
-  <p>Quickly build HTML emails with utility-first CSS</p>
-<div>
-
-  [![Version][npm-version-shield]][npm]
-  [![Build][github-ci-shield]][github-ci]
-  [![Downloads][npm-stats-shield]][npm-stats]
-  [![License][license-shield]][license]
-
-  </div>
-</div>
+# Pronovo Mail-Templates
 
 ## Getting Started
 
-Clone this starter:
-
-```bash
-npx degit maizzle/maizzle my-project
-```
-
-Install dependencies:
+Clone or download this repository. Then navigate into the directory and install dependencies:
 
 ```
-cd my-project
-
 npm install
 ```
 
@@ -46,13 +20,52 @@ Build emails for production:
 npm run build
 ```
 
+## Structure
+These templates are built using Maizzle, a framework that helps you quickly build HTML emails with Tailwind CSS and advanced, email-specific post-processing.
+
+### Templates
+The templates are showcasing how the components can be used to build messages. The 
+
+### Components
+Within the components directory are the building blocks for the templates.
+There are a number of handy components available to build your templates.
+- Button
+- Content
+- Divider
+- Keyvisual
+- Link
+- Paragraph
+- Spacer
+
+Some of the components are used to build the main structure of the templates.
+- Header
+- Title
+- Container
+- Footer
+
+
+## Build
+All templates are output to the 'build_production' directory.
+Build emails for production:
+
+```
+npm run build
+```
+
+Maizzle refers to the settings in 'config.js'. These settings determine how the mails are built.
+For example, the baseURL should be updated to link to the correct images on the Pronovo infrastructure.
+
+```
+baseURL: {
+    url: 'http://pronovo.redefine.studio/',
+    tags: ['img'],
+  },
+```
+
+
 ## Documentation
 
 Maizzle documentation is available at https://maizzle.com
-
-## Issues
-
-Please open all issues in the [framework repository](https://github.com/maizzle/framework).
 
 ## License
 
