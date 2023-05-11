@@ -25,17 +25,16 @@ These templates are built using Maizzle, a framework that helps you quickly buil
 
 ### Templates
 The templates are showcasing how the components can be used to build messages. All templates are based on the main layout provided and consist out of the maincomponents provided. 
-- example-complete.html -> Showcases all available components and variants.
-- example-simple.html -> Shows a simple message including a call to action.
+- example-complete.html → Showcases all available components and variants.
+- example-simple.html → Shows a simple message including a call to action.
 
 ### Components
 Within the components directory are the building blocks for the templates. There are a number of handy components available to build your templates. 
 
-- Button 
-  -> add the attribute 'type="secondary"' to create a different type of button
+- Button (add the attribute `type="secondary"` to create a different type of button)
 - Content
 - Divider
-- Keyvisual
+- Keyvisual (with the attribute `imgsrc="images/pronovo-keyvisual-2.png"` to include a decorative image')
 - Link
 - Paragraph
 - Spacer
@@ -44,18 +43,18 @@ Some of the components are used to build the main structure of the templates.
 - Header
 - Title
 - Container
-- Footer
+- Footer (add the attribute `type="manageable"` to create placeholder-links as a second row)
 
 
 ## Build
-All templates are output to the 'build_production' directory.
+All templates are output to the `build_production` directory.
 To build emails for production run:
 
 ```
 npm run build
 ```
 
-Maizzle refers to the settings in 'config.js'. These settings determine how the mails are built.
+Maizzle refers to the settings in `config.js`. These settings determine how the mails are built.
 For example, the baseURL should be updated to link to the correct images on the Pronovo infrastructure.
 
 ```
