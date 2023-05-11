@@ -1,4 +1,4 @@
-# Pronovo Mail-Templates
+# Pronovo Mail Templates
 
 ## Getting Started
 
@@ -24,12 +24,15 @@ npm run build
 These templates are built using Maizzle, a framework that helps you quickly build HTML emails with Tailwind CSS and advanced, email-specific post-processing.
 
 ### Templates
-The templates are showcasing how the components can be used to build messages. The 
+The templates are showcasing how the components can be used to build messages. All templates are based on the main layout provided and consist out of the maincomponents provided. 
+- example-complete.html -> Showcases all available components and variants.
+- example-simple.html -> Shows a simple message including a call to action.
 
 ### Components
-Within the components directory are the building blocks for the templates.
-There are a number of handy components available to build your templates.
-- Button
+Within the components directory are the building blocks for the templates. There are a number of handy components available to build your templates. 
+
+- Button 
+  -> add the attribute 'type="secondary"' to create a different type of button
 - Content
 - Divider
 - Keyvisual
@@ -46,7 +49,7 @@ Some of the components are used to build the main structure of the templates.
 
 ## Build
 All templates are output to the 'build_production' directory.
-Build emails for production:
+To build emails for production run:
 
 ```
 npm run build
