@@ -109,15 +109,16 @@ module.exports = {
         lg: '18px',
         xl: '20px',
         '2xl': '24px',
-        '3xl': '30px',
+        '3xl': '28px',
         '4xl': '36px',
         '5xl': '42px',
         '6xl': '52px',
       }, 
       lineHeight: {
         button: '16px',
+        small: '24px',
         normal: '27px',
-        title: '54px',
+        title: '36px',
       }
     },
   },
