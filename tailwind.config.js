@@ -100,6 +100,7 @@ module.exports = {
       },
       fontSize: {
         0: '0',
+        1: '1px',
         xxs: '11px',
         xs: '16px',
         '2xs': '13px',
